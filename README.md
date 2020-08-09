@@ -28,3 +28,47 @@ The program is generally divided into four functional modules, namely:
 (3) The management module of the car leaving the parking space
 
 (4) Inquiry module for viewing parking lot status
+
+
+Interface preview
+-----
+Parking lot main page：
+![Alt text](https://github.com/wys9853/Parking-lot-management-system-based-on-C-language/blob/master/image/image1.png)
+
+
+Leave the parking lot subpage：
+![Alt text](https://github.com/wys9853/Parking-lot-management-system-based-on-C-language/blob/master/image/image2.png)
+
+
+Run and test
+-----
+1.Test data and results:
+
+(1) There are 7 consecutive cars arriving, the license plate numbers are CF001, CF002, CF003, CF004, CF005, CF006, CF007, the first 5 cars should enter the parking spaces 1-5, and the sixth and seventh cars should park. Position 1, 2 of the sidewalk.
+
+(2) After the situation in (1) above occurs, let the car with the license plate CF003 drive away from the parking lot, it should display the give way action of CF005, CF004 and the action of CF006 from the sidewalk to the parking space.
+![Alt text](https://github.com/wys9853/Parking-lot-management-system-based-on-C-language/blob/master/image/image3.png)
+
+(3) Check the status of parking spaces and sidewalks at any time. There should be no vacancies and cars on the sidewalks.
+![Alt text](https://github.com/wys9853/Parking-lot-management-system-based-on-C-language/blob/master/image/image4.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
