@@ -22,6 +22,9 @@ Function (function) design:
 ----
 The program is generally divided into four functional modules, namely:
 (1) Program function introduction and operation prompt module
+
 (2) Management module for cars entering parking spaces
+
 (3) The management module of the car leaving the parking space
+
 (4) Inquiry module for viewing parking lot status
