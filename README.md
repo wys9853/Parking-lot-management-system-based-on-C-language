@@ -1,19 +1,19 @@
-#基于C语言的停车场管理系统
-一、简介
-1．设计目的：理解线性表的逻辑结构和存储结构，进一步提高使用理论知识指导解决实际问题的能力。
-2．问题的描述：设停车场只有一个可停放几辆汽车的狭长通道，只有一个大门可供汽车进出。汽车在停车场内按车辆到达的先后顺序依次排列，若车场内已停满几辆汽车，则后来的汽车只能在门外的便道上等候，一旦停车场内有车辆开走，则排在便道上的第一辆汽车即可进入；当停车场内某辆汽车要开走时，由于停车场是狭长的通道，在它之后开入的车辆必须先推出车场为他让路，待车辆开出大门，为他让路的车辆再按原次序进入车场。试设计这样一个停车场模拟管理程序。
+#C-based parking lot management system
+1. Introduction
+1. Design purpose: to understand the logical structure and storage structure of linear tables, and to further improve the ability to use theoretical knowledge to guide solving practical problems.
+2. Description of the problem: Suppose that the parking lot has only one narrow passage that can park several cars, and only one gate for cars to enter and exit. The cars are arranged in the parking lot in the order of arrival. If the parking lot is full of cars, the later cars can only wait on the sidewalk outside the door. Once there is a car driving away in the parking lot, they will be queued. The first car on the sidewalk can enter; when a car in the parking lot wants to drive away, because the parking lot is a long and narrow passage, the vehicle entering after it must first push out of the parking lot to make way for him, and wait for the vehicle to open the gate , The vehicles that made way for him enter the parking lot in the original order. Try to design such a parking lot simulation management program.
 
 
-二、数据结构的设计：
-（1）为了便于区分每辆汽车并了解每辆车当前所处的位置，需要记录汽车的牌照号码和汽车当前的状态。
-（2）为了便于停车场的管理，要为每个车位分配一个固定的编号。
-（3）当停车场的停车位上都已停满了汽车，又有新的汽车到来时要把它调度到便道上，便道上的车辆要按照进入便道的先后顺序顺次序放在便道上，为便道上的每个位置分配一个固定的编号。当有车从停车位上离开后，便道上的第一辆汽车就立即进入停车位上的某个车位。
-（4）当某辆车离开停车场的时候，比他后进停车位的车要为他让路，而且当他开走之后让路的车还要按照原来的停放次序再次进入停车位的某个车位上，为完成这项功能，定义一个结构体。
+2. Data structure design:
+(1) In order to distinguish each car and understand the current location of each car, it is necessary to record the car's license plate number and the current state of the car.
+(2) In order to facilitate the management of the parking lot, a fixed number shall be assigned to each parking space.
+(3) When the parking spaces of the parking lot are full of cars, and when new cars arrive, they should be dispatched to the sidewalk. The vehicles on the sidewalk should be placed on the sidewalk in the order of entering the sidewalk. Assign a fixed number to each position on the sidewalk. When a car leaves the parking space, the first car on the sidewalk immediately enters a certain parking space in the parking space.
+(4) When a certain car leaves the parking lot, the car entering the parking space behind him must make way for him, and when he drives away, the car that gave way has to re-enter a certain parking space in the parking space according to the original parking order To complete this function, define a structure.
 
 
-三、功能（函数）设计：
-本程序从总体上分为四个功能模块，分别为：
-（1）程序功能介绍和操作提示模块
-（2）汽车进入停车位的管理模块
-（3）汽车离开停车位的管理模块
-（4）查看停车场状态的查询模块
+3. Function (function) design:
+The program is generally divided into four functional modules, namely:
+(1) Program function introduction and operation prompt module
+(2) Management module for cars entering parking spaces
+(3) The management module of the car leaving the parking space
+(4) Inquiry module for viewing parking lot status
